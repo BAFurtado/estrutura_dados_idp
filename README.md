@@ -4,7 +4,7 @@
 ### Professor Bernardo Alves Furtado -- 13/11/2020
 
 ------
-<img alt="GitHub stars" src="https://img.shields.io/github/stars/bafurtado/estrutura_dados_idp.svg?color=orange">  ![GitHub All Releases](https://img.shields.io/github/downloads/bafurtado/estrutura_dados_idp/total) ![GitHub](https://img.shields.io/github/license/bafurtado/estrutura_dados_idp)  ![GitHub forks](https://img.shields.io/github/forks/bafurtado/estrutura_dados_idp)
+<img alt="GitHub stars" src="https://img.shields.io/github/stars/bafurtado/estrutura_dados_idp.svg?color=orange">  ![GitHub All Releases](https://img.shields.io/github/downloads/bafurtado/estrutura_dados_idp/total) ![GitHub forks](https://img.shields.io/github/forks/bafurtado/estrutura_dados_idp)
 ------
 
 Este repositório traz os arquivos, links e códigos utilizados na aula.

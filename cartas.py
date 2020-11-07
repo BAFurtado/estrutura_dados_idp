@@ -8,8 +8,8 @@ import random
 
 
 class Carta:
-    """Represents a standard playing carta.
-    Attributes:
+    """Representa uma carta padrão.
+    Atributos:
       naipe: integer 0-3
       rank: integer 1-13
     """
@@ -23,13 +23,13 @@ class Carta:
         self.rank = rank
 
     def __str__(self):
-        """Returns a human-readable string representation."""
+        """Retorna um texto compreensível."""
         return '{} de {}'.format(Carta.rank_names[self.rank],
-                                Carta.naipe_names[self.naipe])
+                                 Carta.naipe_names[self.naipe])
 
     def __eq__(self, other):
         # Eu estou informando para o objeto, para a classe, como fazer comparação dessas coisas
-        """Checks whether self and other have the same rank and naipe.
+        """Checa se a própria carta e a outra possuem o mesmo naipe e mesmo rank.
 
         returns: boolean
         """
@@ -37,7 +37,7 @@ class Carta:
 
     def __lt__(self, other):
         # lt = larger than = maior que
-        """Compares this carta to other, first by naipe, then rank.
+        """Compara esta carta com outra, primeiro o naipe depois o rank.
 
         returns: boolean
         """
@@ -47,14 +47,14 @@ class Carta:
 
 
 class Baralho:
-    """Represents a deck of cartas.
+    """Representa um baralho de cartas.
 
-    Attributes:
-      cartas: list of Carta objects.
+    Atributos:
+      cartas: lista de objetos do tipo Carta.
     """
 
     def __init__(self):
-        """Initializes the Baralho with 52 cartas.
+        """Inicializa o Baralho com 52 cartas.
         """
         self.cartas = []
         for naipe in range(4):
@@ -63,7 +63,7 @@ class Baralho:
                 self.cartas.append(carta)
 
     def __str__(self):
-        """Returns a string representation of the deck.
+        """Returna a representação do Baralho.
         """
         res = []
         for carta in self.cartas:
@@ -71,14 +71,14 @@ class Baralho:
         return '\n'.join(res)
 
     def add_carta(self, carta):
-        """Adds a carta to the deck.
+        """Adiciona a carta ao Baralho.
 
         carta: Carta
         """
         self.cartas.append(carta)
 
     def remove_carta(self, carta):
-        """Removes a carta from the deck or raises exception if it is not there.
+        """Remove a carta do Baralho.
 
         carta: Carta
         """
